@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible problem with DeskHelper.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic data. Do not attach clipboard history, credentials, or your .local-data folder. See the security policy for sensitive reports.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed problem and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the corner pocket..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: DeskHelper version or commit
+      placeholder: "0.3.0 or a commit SHA"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows, Node, and display setup
+      placeholder: "Windows version, node --version, monitor count and display scaling"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized logs or screenshots
+      description: Optional. Remove personal data before attaching anything.

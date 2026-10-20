@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Usage and setup help
+    url: https://github.com/PranavP2207/Desk-Helper/blob/main/.github/SUPPORT.md
+    about: Read the usage, setup, and support guidance first.
+  - name: Security reporting
+    url: https://github.com/PranavP2207/Desk-Helper/blob/main/.github/SECURITY.md
+    about: Keep sensitive details out of public issues.

@@ -1,0 +1,26 @@
+node_modules/
+dist/
+dist-electron/
+.cache/
+.local-data/
+test-results/
+playwright-report/
+artifacts/
+*.log
+.env
+.env.*
+!.env.example
+
+# Local tooling, credentials, editors, and OS files
+.aws/
+.codex/
+.idea/
+.vscode/
+*.local
+*.pem
+*.key
+*.pfx
+*.p12
+.DS_Store
+Thumbs.db
+Desktop.ini

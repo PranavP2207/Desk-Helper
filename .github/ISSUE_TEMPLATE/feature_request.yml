@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an improvement to the desktop-pocket workflow.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you trying to do?
+      description: Explain the current friction with a concrete example.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe how this should work in the compact corner pocket.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Include existing Windows or DeskHelper workflows you tried.

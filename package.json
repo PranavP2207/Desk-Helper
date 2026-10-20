@@ -1,0 +1,45 @@
+{
+  "name": "deskhelper",
+  "version": "0.3.0",
+  "private": true,
+  "description": "A little pocket for the things on your mind.",
+  "type": "module",
+  "main": "dist-electron/electron/main.js",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run typecheck && vite build && tsc -p tsconfig.electron.json && node scripts/copy-assets.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.electron.json",
+    "start": "npm run build && node scripts/start.mjs",
+    "test": "tsx --test tests/store.test.ts tests/widget.test.ts tests/images.test.ts tests/utilities.test.ts tests/clipboard.test.ts",
+    "test:desktop": "npm run build && playwright test",
+    "check": "npm run test && npm run build"
+  },
+  "dependencies": {
+    "lucide-react": "1.59.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "44.9.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PranavP2207/Desk-Helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PranavP2207/Desk-Helper/issues"
+  },
+  "homepage": "https://github.com/PranavP2207/Desk-Helper#readme",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
